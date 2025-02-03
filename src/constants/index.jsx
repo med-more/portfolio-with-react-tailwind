@@ -14,12 +14,22 @@ import projectImage4 from "../assets/project4.jpg";
 import projectImage5 from "../assets/project5.jpeg";
 import projectImage6 from "../assets/project6.jpeg";
 
-import { RiReactjsLine } from "react-icons/ri";
-import { TbBrandNextjs } from "react-icons/tb";
-import { SiMongodb } from "react-icons/si";
-import { DiRedis } from "react-icons/di";
-import { FaNodeJs } from "react-icons/fa";
-import { BiLogoPostgresql } from "react-icons/bi";
+import { 
+  BiLogoJavascript, 
+  BiLogoPostgresql 
+} from "react-icons/bi";
+import { 
+  SiMongodb, 
+  SiExpress, 
+  SiHtml5, 
+  SiCss3, 
+  SiBootstrap, 
+  SiTailwindcss 
+} from "react-icons/si";
+import { 
+  FaNodeJs, 
+  FaReact 
+} from "react-icons/fa";
 
 export const NAVIGATION_LINKS = [
   { label: "Projects", href: "#projects" },
@@ -96,14 +106,9 @@ export const BIO = [
 
 export const SKILLS = [
   {
-    icon: <RiReactjsLine className="text-4xl text-cyan-400 lg:text-5xl" />,
-    name: "React",
+    icon: <BiLogoJavascript className="text-4xl text-yellow-400 lg:text-5xl" />,
+    name: "JavaScript",
     experience: "2+ years",
-  },
-  {
-    icon: <TbBrandNextjs className="text-4xl text-white lg:text-5xl" />,
-    name: "Next.js",
-    experience: "1+ year",
   },
   {
     icon: <SiMongodb className="text-4xl text-green-600 lg:text-5xl" />,
@@ -111,9 +116,34 @@ export const SKILLS = [
     experience: "1.5+ years",
   },
   {
-    icon: <DiRedis className="text-4xl text-red-600 lg:text-5xl" />,
-    name: "Redis",
+    icon: <BiLogoPostgresql className="text-4xl text-sky-700 lg:text-5xl" />,
+    name: "SQL",
     experience: "1+ year",
+  },
+  {
+    icon: <SiExpress className="text-4xl text-gray-400 lg:text-5xl" />,
+    name: "Express.js",
+    experience: "1.5+ years",
+  },
+  {
+    icon: <SiHtml5 className="text-4xl text-orange-500 lg:text-5xl" />,
+    name: "HTML",
+    experience: "2+ years",
+  },
+  {
+    icon: <SiCss3 className="text-4xl text-blue-500 lg:text-5xl" />,
+    name: "CSS",
+    experience: "2+ years",
+  },
+  {
+    icon: <SiBootstrap className="text-4xl text-purple-600 lg:text-5xl" />,
+    name: "Bootstrap",
+    experience: "2+ years",
+  },
+  {
+    icon: <SiTailwindcss className="text-4xl text-cyan-400 lg:text-5xl" />,
+    name: "Tailwind CSS",
+    experience: "1.5+ years",
   },
   {
     icon: <FaNodeJs className="text-4xl text-green-600 lg:text-5xl" />,
@@ -121,35 +151,12 @@ export const SKILLS = [
     experience: "2+ years",
   },
   {
-    icon: <BiLogoPostgresql className="text-4xl text-sky-700 lg:text-5xl" />,
-    name: "PostgreSQL",
-    experience: "1+ year",
-  },
+    icon: <FaReact className="text-4xl text-cyan-400 lg:text-5xl" />,
+    name: "React",
+    experience: "2+ years",
+  }
 ];
 
-export const EXPERIENCES = [
-  {
-    title: "Lead Frontend Developer",
-    company: "Innovative Tech Solutions",
-    duration: "July 2020 - Present",
-    description:
-      "As the Lead Frontend Developer, I spearheaded the development of advanced web applications using cutting-edge technologies like React, Redux, and TypeScript. I worked closely with cross-functional teams, including designers, product managers, and backend developers, to deliver seamless and high-performance user experiences.",
-  },
-  {
-    title: "Frontend Engineer",
-    company: "Digital Creations",
-    duration: "February 2016 - June 2020",
-    description:
-      "At Digital Creations, I focused on building highly interactive and responsive web interfaces using HTML, CSS, JavaScript, and modern libraries like React. I collaborated closely with UX/UI designers to implement design changes that enhanced user engagement and satisfaction. My role involved optimizing website performance, ensuring cross-browser compatibility, and implementing SEO best practices. ",
-  },
-  {
-    title: "Junior Web Developer",
-    company: "Bright Future Technologies",
-    duration: "August 2014 - January 2016",
-    description:
-      "In my role as a Junior Web Developer, I assisted in the development and maintenance of various web applications. I gained hands-on experience in utilizing HTML, CSS, and JavaScript to create user-friendly interfaces. I actively participated in team meetings, contributed to project planning, and collaborated with senior developers to implement new features.",
-  },
-];
 
 export const EDUCATION = [
   {

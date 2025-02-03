@@ -14,7 +14,7 @@ const Hero = () => {
                 {HERO.description}
             </p>
         </div>
-        <div className="w-full md:w-1/2 lg:p-8">
+        <div className="w-full mt-8 md:w-1/2 lg:p-8">
             <div className="flex justify-center">
                 <img src={carlImg} width={550} height={550} alt="med image" className="rounded-3xl" />
             </div>
