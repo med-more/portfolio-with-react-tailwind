@@ -89,9 +89,9 @@ export const PROJECTS = [
 ];
 
 export const BIO = [
-  "Carl Frank studied computer science at the University of Technology,from which he graduated in 2010. Following his education, he honed his craft and expertise over the course of 10 years at Tech Innovations Inc., where he immersed himself in the world of frontend development.",
-  "In 2021, driven by a shared vision for innovative web solutions and a passion for creating extraordinary user experiences Carl Frank co-founded WebArtistry alongside his creative partner, Jane Doe. Together, they set out to redefine frontend development, infusing their projects with creativity and cutting-edge technology.",
-  "As a multi-disciplinary frontend developer, Carl Frank brings a wealth of skills and expertise to his work. From his deep understanding of HTML, CSS, and JavaScript to his proficiency in modern frameworks like React and Vue.js, Carl Frank possesses a versatile skill set that allows him to craft stunning and unforgettable web experiences for his clients and audiences alike.",
+  "Mohammed Baba is a passionate web developer with a strong foundation in full-stack development. With nearly two years of experience, he has worked on a variety of web applications and websites, showcasing his expertise in HTML, CSS, JavaScript, PHP, and Laravel.",
+  "Holding a specialized diploma in software development, Mohammed has successfully built several projects, including a pharmaceutical sales management system, a rental property management platform, and a dynamic blog application. His proficiency extends to Bootstrap, Git, GitHub, and database modeling (Merise, UML), allowing him to craft efficient and scalable solutions.",
+  "Dedicated to continuous learning, he has earned certifications in Full-Stack JavaScript Development (Simplon) and AI Fundamentals (Elements of AI). Beyond technical skills, Mohammed is recognized for his strong teamwork, adaptability, and commitment to excellence in every project he undertakes.",
 ];
 
 export const SKILLS = [
