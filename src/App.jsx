@@ -1,4 +1,5 @@
 import Bio from "./components/Bio"
+import ContactForm from "./components/ContactForm"
 import Education from "./components/Education"
 import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
@@ -17,6 +18,7 @@ const App = () => {
         <Bio />
         <Skills />
         <Education />
+        <ContactForm />
       </div>
     </div>
   )

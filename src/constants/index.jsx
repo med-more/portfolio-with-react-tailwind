@@ -107,52 +107,52 @@ export const SKILLS = [
   {
     icon: <BiLogoJavascript className="text-4xl text-yellow-400 lg:text-5xl" />,
     name: "JavaScript",
-    experience: "2+ years",
+    experience: "1+ year",
   },
   {
     icon: <SiMongodb className="text-4xl text-green-600 lg:text-5xl" />,
     name: "MongoDB",
-    experience: "1.5+ years",
+    experience: "1+ year",
   },
   {
     icon: <BiLogoPostgresql className="text-4xl text-sky-700 lg:text-5xl" />,
     name: "SQL",
-    experience: "1+ year",
+    experience: "2+ year",
   },
   {
     icon: <SiExpress className="text-4xl text-gray-400 lg:text-5xl" />,
     name: "Express.js",
-    experience: "1.5+ years",
+    experience: "1+ year",
   },
   {
     icon: <SiHtml5 className="text-4xl text-orange-500 lg:text-5xl" />,
     name: "HTML",
-    experience: "2+ years",
+    experience: "3+ years",
   },
   {
     icon: <SiCss3 className="text-4xl text-blue-500 lg:text-5xl" />,
     name: "CSS",
-    experience: "2+ years",
+    experience: "3+ years",
   },
   {
     icon: <SiBootstrap className="text-4xl text-purple-600 lg:text-5xl" />,
     name: "Bootstrap",
-    experience: "2+ years",
+    experience: "3+ years",
   },
   {
     icon: <SiTailwindcss className="text-4xl text-cyan-400 lg:text-5xl" />,
     name: "Tailwind CSS",
-    experience: "1.5+ years",
+    experience: "1+ year",
   },
   {
     icon: <FaNodeJs className="text-4xl text-green-600 lg:text-5xl" />,
     name: "Node.js",
-    experience: "2+ years",
+    experience: "1+ year",
   },
   {
     icon: <FaReact className="text-4xl text-cyan-400 lg:text-5xl" />,
     name: "React",
-    experience: "2+ years",
+    experience: "1+ year",
   }
 ];
 
