@@ -35,7 +35,6 @@ export const NAVIGATION_LINKS = [
   { label: "Projects", href: "#projects" },
   { label: "Bio", href: "#bio" },
   { label: "Skills", href: "#skills" },
-  { label: "Work Experience", href: "#work" },
   { label: "Education", href: "#education" },
   { label: "Contact", href: "#contact" },
 ];
@@ -160,18 +159,18 @@ export const SKILLS = [
 
 export const EDUCATION = [
   {
-    degree: "Master of Science in Computer Science",
-    institution: "Stanford University",
-    duration: "September 2012 - June 2014",
+    degree: "Specialized Technician Diploma in Software Development",
+    institution: "Prosec Private Institute, Beni Mellal",
+    duration: "2024",
     description:
-      "Specialized in Human-Computer Interaction and Software Engineering. Completed a thesis on enhancing user experience in web applications through advanced interactive techniques. Participated in various projects involving frontend development, algorithms, and data structures. Graduated with honors.",
+      "Acquired advanced skills in software development, including programming languages such as HTML, CSS, JavaScript, PHP, and Laravel. Gained hands-on experience in database management, web development frameworks, and software modeling using UML and Merise.",
   },
   {
-    degree: "Bachelor of Science in Information Technology",
-    institution: "University of California, Berkeley",
-    duration: "September 2008 - June 2012",
+    degree: "Full-Stack JavaScript Web Developer Certificate",
+    institution: "Simplon",
+    duration: "2025",
     description:
-      "Focused on web development, programming languages, and database management. Actively involved in coding clubs and hackathons, where I developed several web applications using HTML, CSS, JavaScript, and PHP. Completed a senior project on developing an e-commerce platform. Graduated with a high GPA.",
+      "Completed an intensive web development program focusing on JavaScript, React, Node.js, and MongoDB. Worked on hands-on projects and built full-stack applications.",
   },
 ];
 
