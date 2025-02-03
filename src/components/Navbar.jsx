@@ -51,7 +51,7 @@ import { FaBars } from "react-icons/fa";
                 <div className="flex items-center justify-between ">
                     <div>
                         <a href="#">
-                            <a href="#" className="m-2 text-3xl  hover:text-yellow-400">MedFolio</a>
+                            <a href="#" className="m-6 text-3xl  hover:text-red-500">MedFolio</a>
                         </a>
                     </div>
                     <div className="flex items-center">
@@ -68,7 +68,7 @@ import { FaBars } from "react-icons/fa";
                     <ul className="ml-4 mt-4 flex flex-col gap-4 backdrop-blur-md">
                         {NAVIGATION_LINKS.map((item, index) =>(
                             <li key={index}>
-                                <a href={item.href} className="block w-full text-lg" onClick={(e)=>handleLinkClick(e, item.href)}>
+                                <a href={item.href} className="block w-full text-lg  hover:text-yellow-400" onClick={(e)=>handleLinkClick(e, item.href)}>
                                     {item.label}
                                 </a>
                             </li>

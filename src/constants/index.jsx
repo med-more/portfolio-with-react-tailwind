@@ -10,7 +10,7 @@ import {
 import projectImage1 from "../assets/project1.jpeg";
 import projectImage2 from "../assets/project2.jpeg";
 import projectImage3 from "../assets/project3.jpeg";
-import projectImage4 from "../assets/project4.jpeg";
+import projectImage4 from "../assets/project4.jpg";
 import projectImage5 from "../assets/project5.jpeg";
 import projectImage6 from "../assets/project6.jpeg";
 
@@ -42,49 +42,49 @@ export const PROJECTS = [
     id: 1,
     name: "Personal Portfolio",
     description:
-      "A personal portfolio website built with React and Tailwind CSS to showcase my skills, projects, and contact information.",
+      "A personal portfolio website built with Html and CSS also bootstrap and jquery to showcase my skills, projects, and contact information.",
     image: projectImage1,
-    githubLink: "https://github.com/user/personal-portfolio",
+    githubLink: "https://github.com/med-more/Portfolio-Dynamique",
   },
   {
     id: 2,
-    name: "E-Commerce Platform",
+    name: "Personal Portfolio version 2",
     description:
-      "An e-commerce web application developed using Next.js and Stripe for payment integration, featuring a comprehensive product catalog, shopping cart, and checkout system.",
+      "A personal portfolio website built with Reactjs and Tailwind CSS also framer motion to showcase my skills, projects, and contact information.",
     image: projectImage2,
-    githubLink: "https://github.com/user/ecommerce-platform",
+    githubLink: "https://github.com/med-more/portfolio-with-react-tailwind",
   },
   {
     id: 3,
-    name: "Task Management Tool",
+    name: "weather Application",
     description:
-      "A task management application built with React and Redux for efficient task tracking and team collaboration, including features like project boards, task assignment, and progress tracking.",
+      "An interactive web application that allows users to view real-time weather forecasts for different cities. The application should include an innovative feature for managing a list of favorite cities to provide a personalized and engaging experience.",
     image: projectImage3,
-    githubLink: "https://github.com/user/task-management-tool",
+    githubLink: "https://github.com/med-more/Meteo-Application",
   },
   {
     id: 4,
-    name: "Weather App",
+    name: "start-up",
     description:
-      "A weather application that uses the OpenWeatherMap API to fetch and display current weather data and forecasts for various locations, built with React and styled-components.",
+      "A team project the object is creating a website to introducing our team that project created with html, css, bootstrap, js and AOS for animations",
     image: projectImage4,
-    githubLink: "https://github.com/user/weather-app",
+    githubLink: "https://github.com/med-more/start-up",
   },
   {
     id: 5,
-    name: "Blog Platform",
+    name: "Blog static Platform",
     description:
-      "A blogging platform developed with Next.js and Markdown for creating, editing, and publishing blog posts. It features a rich text editor, tag system, and user authentication.",
+      "A blogging platform developed with html and css .",
     image: projectImage5,
-    githubLink: "https://github.com/user/blog-platform",
+    githubLink: "https://github.com/med-more/Blog-Statique",
   },
   {
     id: 6,
-    name: "Chat Application",
+    name: "Task Manager",
     description:
-      "A real-time chat application using Firebase for backend services, including user authentication, chat rooms, and instant messaging features. Built with React and Firebase.",
+      "A backend task management application using Node.js, Express.js, and MongoDB.",
     image: projectImage6,
-    githubLink: "https://github.com/user/chat-application",
+    githubLink: "https://github.com/med-more/gestionnaire-des-taches",
   },
 ];
 
