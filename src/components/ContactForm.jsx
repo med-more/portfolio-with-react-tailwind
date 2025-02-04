@@ -2,6 +2,7 @@ import emailjs from "@emailjs/browser"
 import { useState } from "react"
 import toast, { Toaster } from "react-hot-toast";
 import { FiSend } from "react-icons/fi";
+import { motion } from "framer-motion";
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({
@@ -63,20 +64,30 @@ const ContactForm = () => {
   <Toaster />
   <h2 className="my-8 text-center text-4xl font-semibold tracking-tighter text-white">Let's Connect</h2>
   <div className="relative w-full rounded-2xl bg-black/30 p-8 backdrop-blur-xl shadow-lg border border-stone-50/30 bg-gradient-to-br from-white/10 to-white/5">
-    <form onSubmit={handleSubmit}>
+    <motion.form
+    initial={{opacity:0}}
+    whileInView={{opacity:1}}
+    transition={{duration:0.8, delay:0.7}}
+     onSubmit={handleSubmit}>
       <div className="mb-4 flex flex-col lg:flex-row space-x-0 lg:space-x-4">
         <div className="lg:w-1/2">
           <input type="text" id="name" name="name" value={formData.name} placeholder="Name" onChange={handleChange}
             className="mb-4 w-full appearance-none rounded-lg border border-white/20 bg-transparent px-3 py-2 text-sm text-white focus:border-white focus:outline-none"/>
           {errors.name && (
-            <p className="text-sm text-rose-500">{errors.name}</p>
+            <motion.p
+            initial={{opacity:0}}
+            whileInView={{opacity:1}}
+             className="text-sm text-rose-500">{errors.name}</motion.p>
           )}
         </div>
         <div className="lg:w-1/2">
           <input type="email" id="email" name="email" value={formData.email} placeholder="Email" onChange={handleChange}
             className="mb-4 w-full appearance-none rounded-lg border border-white/20 bg-transparent px-3 py-2 text-sm text-white focus:border-white focus:outline-none"/>
           {errors.email && (
-            <p className="text-sm text-rose-500">{errors.email}</p>
+            <motion.p
+            initial={{opacity:0}}
+            whileInView={{opacity:1}}
+             className="text-sm text-rose-500">{errors.email}</motion.p>
           )}
         </div>
       </div>
@@ -84,7 +95,10 @@ const ContactForm = () => {
         <textarea id="message" name="message" value={formData.message} placeholder="Message" onChange={handleChange}
           className="mb-4 w-full appearance-none rounded-lg border border-white/20 bg-transparent px-3 py-2 text-sm text-white focus:border-white focus:outline-none" rows="6"/>
         {errors.message && (
-          <p className="text-sm text-rose-500">{errors.message}</p>
+          <motion.p
+          initial={{opacity:0}}
+          whileInView={{opacity:1}}
+           className="text-sm text-rose-500">{errors.message}</motion.p>
         )}
       </div>
       <button type="submit" className={`w-full rounded border border-white/20 bg-white/20 px-4 py-2 text-sm font-semibold text-white hover:bg-white/30 ${
@@ -95,7 +109,7 @@ const ContactForm = () => {
           <FiSend />
         </div>
       </button>
-    </form>
+    </motion.form>
   </div>
 </div>
   )
