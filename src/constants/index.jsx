@@ -177,6 +177,7 @@ export const SOCIAL_MEDIA_LINKS = [
     href: "mohammed_0208.",
     icon: <FaDiscord fontSize={25} className="hover:opacity-80" />,
     hoverColor: "hover:text-indigo-500",
+    title : "mohammed_0208.",
   },
   {
     href: "https://instagram.com/mb_15_mb?igshid=MzNlNGNkZWQ4Mg==",

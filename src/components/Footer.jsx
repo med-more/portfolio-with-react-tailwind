@@ -19,7 +19,7 @@ const Footer = () => {
             initial={{opacity:0}}
             whileInView={{opacity:1}}
             transition={{duration:index*1}}
-             key={index} href={link.href} target="_blank" rel="noopener noreferrer" className={`text-white transition-colors duration-300 ${link.hoverColor}`}>
+             key={index} href={link.href} target="_blank" title={link.title} rel="noopener noreferrer" className={`text-white transition-colors duration-300 ${link.hoverColor}`}>
               {link.icon}
             </motion.a>
           ))}

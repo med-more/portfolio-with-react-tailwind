@@ -1,11 +1,28 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { NAVIGATION_LINKS } from "../constants";
 import { FaTimes } from "react-icons/fa";
 import { FaBars } from "react-icons/fa";
+import { BsSun, BsMoon } from "react-icons/bs";
 
 /* import logo from "../assets/logo.png"*/
     const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
+
+    useEffect(()=>{
+        if (theme === "dark") {
+            document.documentElement.classList.add("dark");
+            document.documentElement.classList.remove("light");
+        } else{
+            document.documentElement.classList.add("light");
+            document.documentElement.classList.remove("dark");
+        }
+        localStorage.setItem("theme", theme);
+    }, [theme]);
+
+    const toggleTheme = () =>{
+        setTheme(theme === "dark" ? "light" : "dark");
+    };
     const toggleMobileMenu = () =>{
         setIsMobileMenuOpen(!isMobileMenuOpen);
     }
@@ -33,7 +50,7 @@ import { FaBars } from "react-icons/fa";
                     <div>
                             <a href="#" className=" text-3xl hover:text-red-500">MedFolio</a>
                     </div>
-                    <div>
+                    <div className="flex items-center gap-6">
                         <ul className="flex items-center gap-4">
                             {NAVIGATION_LINKS.map((item, index) =>(
                                 <li key={index}>
@@ -43,6 +60,9 @@ import { FaBars } from "react-icons/fa";
                                 </li>
                             ))}
                         </ul>
+                        <button onClick={toggleTheme} className="ml-4 p-2 rounded-full border border-white/30 hover:bg-white/10 transition">
+                            {theme === "dark" ? <BsSun className="text-yellow-400" /> : <BsMoon className="text-blue-500"/>} 
+                        </button>
                     </div>
                 </div>
            </div>
@@ -53,8 +73,14 @@ import { FaBars } from "react-icons/fa";
                         <a href="#">
                             <a href="#" className="m-6 text-3xl  hover:text-red-500">MedFolio</a>
                         </a>
+
                     </div>
-                    <div className="flex items-center">
+                    <div className="flex items-center gap-4">
+
+                        <button onClick={toggleTheme} className="ml-4 p-2 rounded-full border border-white/30 hover:bg-white/10 transition">
+                            {theme === "dark" ? <BsSun className="text-yellow-400" /> : <BsMoon className="text-blue-500"/>} 
+                        </button>
+
                         <button className="focus:outline-none lg:hidden" onClick={toggleMobileMenu}>
                             {isMobileMenuOpen ? (
                                 <FaTimes className="m-2 h-6 w-5" />
