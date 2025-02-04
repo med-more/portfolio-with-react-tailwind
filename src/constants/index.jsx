@@ -1,8 +1,6 @@
 import {
-  FaXTwitter,
   FaGithub,
   FaLinkedin,
-  FaFacebook,
   FaDiscord,
   FaInstagram,
 } from "react-icons/fa6";
@@ -176,27 +174,23 @@ export const EDUCATION = [
 
 export const SOCIAL_MEDIA_LINKS = [
   {
-    href: "https://x.com/",
-    icon: <FaFacebook fontSize={25} className="hover:opacity-80" />,
-  },
-  {
-    href: "https://x.com/",
+    href: "mohammed_0208.",
     icon: <FaDiscord fontSize={25} className="hover:opacity-80" />,
+    hoverColor: "hover:text-indigo-500",
   },
   {
-    href: "https://x.com/",
+    href: "https://instagram.com/mb_15_mb?igshid=MzNlNGNkZWQ4Mg==",
     icon: <FaInstagram fontSize={25} className="hover:opacity-80" />,
+    hoverColor: "hover:text-pink-500",
   },
   {
-    href: "https://x.com/",
-    icon: <FaXTwitter fontSize={25} className="hover:opacity-80" />,
-  },
-  {
-    href: "https://github.com/",
+    href: "https://github.com/med-more",
     icon: <FaGithub fontSize={25} className="hover:opacity-80" />,
+    hoverColor: "hover:text-gray-400",
   },
   {
-    href: "https://www.linkedin.com/",
+    href: "https://www.linkedin.com/in/mohammed-baba-919b28336",
     icon: <FaLinkedin fontSize={25} className="hover:opacity-80" />,
+    hoverColor: "hover:text-blue-500",
   },
 ];
