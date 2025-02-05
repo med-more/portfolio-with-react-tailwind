@@ -48,7 +48,7 @@ import { BsSun, BsMoon } from "react-icons/bs";
            <div className="mx-auto hidden max-w-2xl items-center justify-center rounded-lg border border-stone-50/30 bg-black/20 py-3 backdrop-blur-lg lg:flex">
                 <div className="flex items-center justify-between gap-6">
                     <div>
-                            <a href="#" className=" text-3xl hover:text-red-500">MedFolio</a>
+                            <a id="logo" href="#" className=" text-3xl hover:text-red-500">MedFolio</a>
                     </div>
                     <div className="flex items-center gap-6">
                         <ul className="flex items-center gap-4">
@@ -71,7 +71,7 @@ import { BsSun, BsMoon } from "react-icons/bs";
                 <div className="flex items-center justify-between ">
                     <div>
                         <a href="#">
-                            <a href="#" className="m-6 text-3xl  hover:text-red-500">MedFolio</a>
+                            <a href="#" id="logo" className="m-6 text-3xl  hover:text-red-500">MedFolio</a>
                         </a>
 
                     </div>

@@ -25,8 +25,8 @@ const Projects = () => {
                     whileHover={{opacity:1}}
                     transition={{duration:0.5}}
                      className="absolute inset-0 flex flex-col items-center justify-center opacity-0 backdrop-blur-lg transition-opacity duration-500 group-hover:opacity-100 bg-black/30">
-                        <h3 className="mb-2 text-xl text-white">{project.name}</h3>
-                        <p className="mb-12 p-4 text-white">{project.description}</p>
+                        <h3 id="l" className="mb-2 text-xl text-white">{project.name}</h3>
+                        <p id="l" className="mb-12 p-4 text-white">{project.description}</p>
                         <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="rounded-full bg-white px-4 py-2 text-black hover:bg-gray-300">
                             <div className="flex items-center ">
                                 <span>View On GitHub</span>
