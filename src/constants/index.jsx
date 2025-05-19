@@ -1,197 +1,317 @@
 import {
-  FaGithub,
-  FaLinkedin,
-  FaDiscord,
-  FaInstagram,
-} from "react-icons/fa6";
+  Code,
+  Database,
+  Server,
+  Stethoscope,
+  Brain,
+  LineChart,
+  Microscope,
+  Tablet,
+  Cloud,
+  ShieldCheck,
+  Github,
+  Linkedin,
+  Twitter,
+  Instagram,
+  Mail,
+} from "lucide-react"
 
-import projectImage1 from "../assets/project1.jpeg";
-import projectImage2 from "../assets/project2.jpeg";
-import projectImage3 from "../assets/project3.jpeg";
-import projectImage4 from "../assets/project4.jpg";
-import projectImage5 from "../assets/project5.jpeg";
-import projectImage6 from "../assets/project6.jpeg";
-
-import { 
-  BiLogoJavascript, 
-  BiLogoPostgresql 
-} from "react-icons/bi";
-import { 
-  SiMongodb, 
-  SiExpress, 
-  SiHtml5, 
-  SiCss3, 
-  SiBootstrap, 
-  SiTailwindcss 
-} from "react-icons/si";
-import { 
-  FaNodeJs, 
-  FaReact 
-} from "react-icons/fa";
-
-export const NAVIGATION_LINKS = [
-  { label: "Projects", href: "#projects" },
-  { label: "Bio", href: "#bio" },
-  { label: "Skills", href: "#skills" },
-  { label: "Education", href: "#education" },
-  { label: "Contact", href: "#contact" },
-];
-
+// Hero section data
 export const HERO = {
-  name: "Mohammed Baba",
-  greet: "Hello there! 👋🏻",
+  name: "Baba Mohammed",
+  greet: "Full Stack Developper",
   description:
-    "I am a passionate developer with a knack for creating beautiful and functional user interfaces. I like transforming ideas into engaging web experiences for over a decade.",
-};
+    "🎯 Full Stack Web Developer Passionate about crafting modern, responsive web applications from front to back. ✨ UI/UX lover | 🔐 Security-focused | ⚙️ API builder",
+}
 
+// Bio section data
+export const BIO = [
+  "I'm Dr. Medina Carlson, a board-certified physician with over 10 years of clinical experience who discovered a passion for technology and software development.",
+  "After witnessing firsthand the inefficiencies in healthcare systems, I decided to bridge the gap between medicine and technology by learning to code and developing innovative healthcare solutions.",
+  "My unique background allows me to understand the real-world challenges faced by healthcare providers and create software that addresses their specific needs while improving patient care.",
+  "I specialize in developing intuitive, HIPAA-compliant applications that streamline clinical workflows, enhance data management, and ultimately improve healthcare delivery and patient outcomes.",
+]
+
+// Skills section data
+export const SKILLS = [
+  {
+    name: "Frontend Development",
+    icon: <Code className="h-6 w-6 text-blue-400" />,
+    experience: "5 years",
+    level: 90,
+  },
+  {
+    name: "Backend Development",
+    icon: <Server className="h-6 w-6 text-blue-400" />,
+    experience: "4 years",
+    level: 85,
+  },
+  {
+    name: "Database Management",
+    icon: <Database className="h-6 w-6 text-blue-400" />,
+    experience: "4 years",
+    level: 80,
+  },
+  {
+    name: "Machine Learning",
+    icon: <Brain className="h-6 w-6 text-blue-400" />,
+    experience: "3 years",
+    level: 75,
+  },
+  {
+    name: "Clinical Medicine",
+    icon: <Stethoscope className="h-6 w-6 text-blue-400" />,
+    experience: "10 years",
+    level: 95,
+  },
+  {
+    name: "Data Analysis",
+    icon: <LineChart className="h-6 w-6 text-blue-400" />,
+    experience: "6 years",
+    level: 85,
+  },
+  {
+    name: "Medical Research",
+    icon: <Microscope className="h-6 w-6 text-blue-400" />,
+    experience: "8 years",
+    level: 90,
+  },
+  {
+    name: "Mobile Development",
+    icon: <Tablet className="h-6 w-6 text-blue-400" />,
+    experience: "3 years",
+    level: 70,
+  },
+  {
+    name: "Cloud Services",
+    icon: <Cloud className="h-6 w-6 text-blue-400" />,
+    experience: "4 years",
+    level: 80,
+  },
+  {
+    name: "Healthcare Security",
+    icon: <ShieldCheck className="h-6 w-6 text-blue-400" />,
+    experience: "5 years",
+    level: 85,
+  },
+]
+
+// Education section data
+export const EDUCATION = [
+  {
+    degree: "Doctor of Medicine (MD)",
+    institution: "Stanford University School of Medicine",
+    location: "Stanford, CA",
+    duration: "2008 - 2012",
+    description:
+      "Graduated with honors. Specialized in Internal Medicine with a focus on healthcare technology integration.",
+    achievements: ["Research Excellence Award", "Clinical Innovation Prize"],
+  },
+  {
+    degree: "Residency in Internal Medicine",
+    institution: "Massachusetts General Hospital",
+    location: "Boston, MA",
+    duration: "2012 - 2015",
+    description:
+      "Completed residency with distinction. Participated in digital health initiatives and electronic medical record optimization.",
+    achievements: ["Chief Resident", "Quality Improvement Award"],
+  },
+  {
+    degree: "Fellowship in Medical Informatics",
+    institution: "Johns Hopkins University",
+    location: "Baltimore, MD",
+    duration: "2015 - 2017",
+    description: "Specialized in healthcare data systems, clinical decision support, and medical software development.",
+    achievements: ["Innovation Fellowship", "Published 5 research papers"],
+  },
+  {
+    degree: "Full Stack Web Development Bootcamp",
+    institution: "Tech Academy",
+    location: "San Francisco, CA",
+    duration: "2018",
+    description:
+      "Intensive program covering modern web development technologies and practices with a focus on healthcare applications.",
+    achievements: ["Best Capstone Project", "Mentor's Choice Award"],
+  },
+]
+
+// Projects section data
 export const PROJECTS = [
   {
     id: 1,
-    name: "Personal Portfolio",
-    description:
-      "A personal portfolio website built with Html and CSS also bootstrap and jquery to showcase my skills, projects, and contact information.",
-    image: projectImage1,
-    githubLink: "https://github.com/med-more/Portfolio-Dynamique",
+    name: "MedTrack Pro",
+    description: "A comprehensive patient tracking system for healthcare professionals with real-time analytics.",
+    image: "/placeholder.svg?height=400&width=600",
+    githubLink: "https://github.com",
+    liveLink: "https://example.com",
+    tags: ["React", "Node.js", "MongoDB", "Express"],
   },
   {
     id: 2,
-    name: "Personal Portfolio version 2",
-    description:
-      "A personal portfolio website built with Reactjs and Tailwind CSS also framer motion to showcase my skills, projects, and contact information.",
-    image: projectImage2,
-    githubLink: "https://github.com/med-more/portfolio-with-react-tailwind",
+    name: "HealthSync",
+    description: "Mobile application for synchronizing patient data across multiple healthcare providers.",
+    image: "/placeholder.svg?height=400&width=600",
+    githubLink: "https://github.com",
+    liveLink: "https://example.com",
+    tags: ["React Native", "Firebase", "Redux"],
   },
   {
     id: 3,
-    name: "weather Application",
-    description:
-      "An interactive web application that allows users to view real-time weather forecasts for different cities. The application should include an innovative feature for managing a list of favorite cities to provide a personalized and engaging experience.",
-    image: projectImage3,
-    githubLink: "https://github.com/med-more/Meteo-Application",
+    name: "MedVision AI",
+    description: "AI-powered diagnostic tool for analyzing medical images and providing preliminary assessments.",
+    image: "/placeholder.svg?height=400&width=600",
+    githubLink: "https://github.com",
+    liveLink: "https://example.com",
+    tags: ["Python", "TensorFlow", "Flask", "AWS"],
   },
   {
     id: 4,
-    name: "start-up",
-    description:
-      "A team project the object is creating a website to introducing our team that project created with html, css, bootstrap, js and AOS for animations",
-    image: projectImage4,
-    githubLink: "https://github.com/med-more/start-up",
+    name: "Clinical Trials Dashboard",
+    description: "Interactive dashboard for monitoring and managing clinical trials data and participant information.",
+    image: "/placeholder.svg?height=400&width=600",
+    githubLink: "https://github.com",
+    liveLink: "https://example.com",
+    tags: ["Vue.js", "D3.js", "PostgreSQL"],
   },
   {
     id: 5,
-    name: "Blog static Platform",
-    description:
-      "A blogging platform developed with html and css .",
-    image: projectImage5,
-    githubLink: "https://github.com/med-more/Blog-Statique",
+    name: "MedScheduler",
+    description: "Appointment scheduling system optimized for medical practices with automated reminders.",
+    image: "/placeholder.svg?height=400&width=600",
+    githubLink: "https://github.com",
+    liveLink: "https://example.com",
+    tags: ["React", "GraphQL", "MongoDB"],
   },
   {
     id: 6,
-    name: "Task Manager",
+    name: "HealthData API",
+    description: "Secure API for standardized health data exchange between different healthcare systems.",
+    image: "/placeholder.svg?height=400&width=600",
+    githubLink: "https://github.com",
+    liveLink: "https://example.com",
+    tags: ["Node.js", "Express", "OAuth", "Docker"],
+  },
+  {
+    id: 7,
+    name: "Medical Research Platform",
+    description: "Collaborative platform for medical researchers to share findings and coordinate studies.",
+    image: "/placeholder.svg?height=400&width=600",
+    githubLink: "https://github.com",
+    liveLink: "https://example.com",
+    tags: ["React", "Django", "PostgreSQL", "Redis"],
+  },
+  {
+    id: 8,
+    name: "Patient Portal",
     description:
-      "A backend task management application using Node.js, Express.js, and MongoDB.",
-    image: projectImage6,
-    githubLink: "https://github.com/med-more/gestionnaire-des-taches",
+      "Secure patient portal for accessing medical records, scheduling appointments, and messaging providers.",
+    image: "/placeholder.svg?height=400&width=600",
+    githubLink: "https://github.com",
+    liveLink: "https://example.com",
+    tags: ["Angular", "Node.js", "MySQL", "Socket.io"],
   },
-];
+  {
+    id: 9,
+    name: "Medical Inventory System",
+    description: "Inventory management system for hospitals and clinics with barcode scanning and alerts.",
+    image: "/placeholder.svg?height=400&width=600",
+    githubLink: "https://github.com",
+    liveLink: "https://example.com",
+    tags: ["React", "Express", "MongoDB", "Electron"],
+  },
+]
 
-export const BIO = [
-  "Mohammed Baba is a passionate web developer with a strong foundation in full-stack development. With nearly two years of experience, he has worked on a variety of web applications and websites, showcasing his expertise in HTML, CSS, JavaScript, PHP, and Laravel.",
-  "Holding a specialized diploma in software development, Mohammed has successfully built several projects, including a pharmaceutical sales management system, a rental property management platform, and a dynamic blog application. His proficiency extends to Bootstrap, Git, GitHub, and database modeling (Merise, UML), allowing him to craft efficient and scalable solutions.",
-  "Dedicated to continuous learning, he has earned certifications in Full-Stack JavaScript Development (Simplon) and AI Fundamentals (Elements of AI). Beyond technical skills, Mohammed is recognized for his strong teamwork, adaptability, and commitment to excellence in every project he undertakes.",
-];
+// Navigation links
+export const NAVIGATION_LINKS = [
+  { href: "#hero", label: "Home" },
+  { href: "#projects", label: "Projects" },
+  { href: "#bio", label: "About" },
+  { href: "#skills", label: "Skills" },
+  { href: "#education", label: "Education" },
+  { href: "#contact", label: "Contact" },
+]
 
-export const SKILLS = [
-  {
-    icon: <BiLogoJavascript className="text-4xl text-yellow-400 lg:text-5xl" />,
-    name: "JavaScript",
-    experience: "1+ year",
-  },
-  {
-    icon: <SiMongodb className="text-4xl text-green-600 lg:text-5xl" />,
-    name: "MongoDB",
-    experience: "1+ year",
-  },
-  {
-    icon: <BiLogoPostgresql className="text-4xl text-sky-700 lg:text-5xl" />,
-    name: "SQL",
-    experience: "2+ year",
-  },
-  {
-    icon: <SiExpress className="text-4xl text-gray-400 lg:text-5xl" />,
-    name: "Express.js",
-    experience: "1+ year",
-  },
-  {
-    icon: <SiHtml5 className="text-4xl text-orange-500 lg:text-5xl" />,
-    name: "HTML",
-    experience: "3+ years",
-  },
-  {
-    icon: <SiCss3 className="text-4xl text-blue-500 lg:text-5xl" />,
-    name: "CSS",
-    experience: "3+ years",
-  },
-  {
-    icon: <SiBootstrap className="text-4xl text-purple-600 lg:text-5xl" />,
-    name: "Bootstrap",
-    experience: "3+ years",
-  },
-  {
-    icon: <SiTailwindcss className="text-4xl text-cyan-400 lg:text-5xl" />,
-    name: "Tailwind CSS",
-    experience: "1+ year",
-  },
-  {
-    icon: <FaNodeJs className="text-4xl text-green-600 lg:text-5xl" />,
-    name: "Node.js",
-    experience: "1+ year",
-  },
-  {
-    icon: <FaReact className="text-4xl text-cyan-400 lg:text-5xl" />,
-    name: "React",
-    experience: "1+ year",
-  }
-];
-
-
-export const EDUCATION = [
-  {
-    degree: "Specialized Technician Diploma in Software Development",
-    institution: "Prosec Private Institute, Beni Mellal",
-    duration: "2024",
-    description:
-      "Acquired advanced skills in software development, including programming languages such as HTML, CSS, JavaScript, PHP, and Laravel. Gained hands-on experience in database management, web development frameworks, and software modeling using UML and Merise.",
-  },
-  {
-    degree: "Full-Stack JavaScript Web Developer Certificate",
-    institution: "Simplon",
-    duration: "2025",
-    description:
-      "Completed an intensive web development program focusing on JavaScript, React, Node.js, and MongoDB. Worked on hands-on projects and built full-stack applications.",
-  },
-];
-
+// Social media links
 export const SOCIAL_MEDIA_LINKS = [
   {
-    href: "mohammed_0208.",
-    icon: <FaDiscord fontSize={25} className="hover:opacity-80" />,
+    title: "GitHub",
+    href: "https://github.com",
+    icon: <Github className="h-5 w-5" />,
     hoverColor: "hover:text-indigo-500",
-    title : "mohammed_0208.",
   },
   {
-    href: "https://instagram.com/mb_15_mb?igshid=MzNlNGNkZWQ4Mg==",
-    icon: <FaInstagram fontSize={25} className="hover:opacity-80" />,
+    title: "LinkedIn",
+    href: "https://linkedin.com",
+    icon: <Linkedin className="h-5 w-5" />,
+    hoverColor: "hover:text-blue-500",
+  },
+  {
+    title: "Twitter",
+    href: "https://twitter.com",
+    icon: <Twitter className="h-5 w-5" />,
+    hoverColor: "hover:text-sky-500",
+  },
+  {
+    title: "Instagram",
+    href: "https://instagram.com",
+    icon: <Instagram className="h-5 w-5" />,
     hoverColor: "hover:text-pink-500",
   },
   {
-    href: "https://github.com/med-more",
-    icon: <FaGithub fontSize={25} className="hover:opacity-80" />,
+    title: "Email",
+    href: "mailto:contact@medfolio.com",
+    icon: <Mail className="h-5 w-5" />,
     hoverColor: "hover:text-gray-400",
   },
-  {
-    href: "https://www.linkedin.com/in/mohammed-baba-919b28336",
-    icon: <FaLinkedin fontSize={25} className="hover:opacity-80" />,
-    hoverColor: "hover:text-blue-500",
+]
+
+// Contact form validation schema
+export const CONTACT_SCHEMA = {
+  name: {
+    min: 2,
+    max: 50,
+    required: true,
+    errorMessages: {
+      min: "Name is too short",
+      max: "Name is too long",
+      required: "Name is required",
+    },
   },
-];
+  email: {
+    required: true,
+    errorMessages: {
+      email: "Invalid email address",
+      required: "Email is required",
+    },
+  },
+  message: {
+    min: 10,
+    max: 1000,
+    required: true,
+    errorMessages: {
+      min: "Message is too short",
+      max: "Message is too long",
+      required: "Message is required",
+    },
+  },
+}
+
+// Bio stats
+export const BIO_STATS = [
+  {
+    value: "10+",
+    label: "Years in Medicine",
+  },
+  {
+    value: "5+",
+    label: "Years Coding",
+  },
+  {
+    value: "20+",
+    label: "Projects Completed",
+  },
+  {
+    value: "15+",
+    label: "Healthcare Partners",
+  },
+]
