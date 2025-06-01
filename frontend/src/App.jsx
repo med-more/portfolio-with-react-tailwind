@@ -89,7 +89,7 @@ const App = () => {
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center container mx-auto px-4 sm:px-6 lg:px-8">
         <Toaster
-          position="top-right"
+          position="bottom-left"
           toastOptions={{
             duration: 3000,
             style: {
