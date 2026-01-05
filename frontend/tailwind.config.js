@@ -24,6 +24,7 @@ module.exports = {
       ...defaultConfig.theme?.extend,
       colors: {
         ...defaultConfig.theme?.extend?.colors,
+        'hover-dark': '#262629',
         blue: {
           50: "#eff6ff",
           100: "#dbeafe",

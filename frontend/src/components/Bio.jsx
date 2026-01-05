@@ -4,20 +4,21 @@ import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
 import { Download } from "lucide-react"
 import { BIO, BIO_STATS } from "../constants/index"
+import resumePdf from "../assets/Mohammed Baba Resume.pdf"
 
 const Bio = () => {
   const ref = useRef(null)
-  const isInView = useInView(ref, { once: false, amount: 0.3 })
+  const isInView = useInView(ref, { once: false, amount: 0.01, margin: "-100px" })
 
   return (
     <section id="bio" className="py-20 w-full">
       <div className="container mx-auto px-4">
         <motion.div
-          initial={{ opacity: 0, y: -20 }}
+          initial={{ opacity: 0, y: -10 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="mb-16 text-center"
+          transition={{ duration: 0.3 }}
+          viewport={{ once: true, margin: "-150px" }}
+          className="mb-12 text-center"
         >
           <span className="inline-block rounded-full bg-blue-500/20 px-4 py-1 text-sm font-medium text-blue-300 dark:text-blue-300 light:text-slate-900 backdrop-blur-sm mb-4">
             About Me
@@ -48,9 +49,9 @@ const Bio = () => {
                 {BIO.map((paragraph, index) => (
                   <motion.p
                     key={index}
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
-                    transition={{ duration: 0.8, delay: index * 0.2 }}
+                    initial={{ opacity: 0, x: -10 }}
+                    animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -10 }}
+                    transition={{ duration: 0.3, delay: index * 0.1 }}
                     className="text-lg md:text-xl text-white/90 leading-relaxed border-l border-blue-500/30 pl-4"
                   >
                     {paragraph}
@@ -59,10 +60,10 @@ const Bio = () => {
               </div>
 
               <motion.div
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.8 }}
-                viewport={{ once: true }}
+                transition={{ duration: 0.3, delay: 0.1 }}
+                viewport={{ once: true, margin: "-150px" }}
                 className="mt-10 flex flex-wrap justify-center gap-4"
               >
                 {BIO_STATS.map((stat, index) => (
@@ -89,8 +90,8 @@ const Bio = () => {
                 <motion.a
                   whileHover={{ scale: 1.05, backgroundColor: "rgba(59, 130, 246, 0.3)" }}
                   whileTap={{ scale: 0.95 }}
-                  href="/assets/Mohammed Baba.pdf"
-                  download="Mohammed Baba.pdf"
+                  href={resumePdf}
+                  download="Mohammed Baba Resume.pdf"
                   type="application/pdf"
                   className="inline-flex items-center gap-2 rounded-none bg-blue-500/20 px-8 py-4 text-base font-medium text-white backdrop-blur-sm transition-all hover:bg-blue-500/30 border-l-2 border-t-2 border-blue-500/30 light:text-slate-900"
                 >
