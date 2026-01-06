@@ -838,7 +838,7 @@ export const PROJECTS = [
     /* images: [p8, p8, p8], */
     githubLink:
       "https://github.com/med-more/ConstructionXpert-Services-Solution-Application-de-Gestion-de-Projets-de-Construction.git",
-    liveLink: "https://example.com",
+    liveLink: "https://x-constructions.netlify.app/",
     tags: ["Reactjs", "Tailwindcss", "Express js", "Node.js", "MongoDB", "react hot toast", "framer motion"],
   },
   {
