@@ -74,7 +74,7 @@ const ProjectsNew = () => {
                     whileTap={{ scale: 0.95 }}
                     className={`px-6 py-3 rounded-xl font-medium flex items-center gap-2 transition-all shadow-lg ${
                       project.liveLink && project.liveLink !== "https://example.com"
-                        ? "bg-purple-600 hover:bg-purple-700 text-white hover:shadow-purple-500/50"
+                        ? "bg-purple-600 hover:bg-purple-700 text-white"
                         : "bg-gray-400 cursor-not-allowed text-white"
                     }`}
                   >

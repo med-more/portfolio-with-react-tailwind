@@ -12,16 +12,10 @@ const FooterNew = () => {
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center space-y-2"
+          className="text-center"
         >
           <p className="text-sm text-gray-600">
-            "Code is like humor. When you have to explain it, it's bad." — Cory House
-          </p>
-          <p className="text-sm text-gray-600">
-            ©{currentYear}
-          </p>
-          <p className="text-sm text-gray-600">
-            Developed by <a href="https://github.com/med-more" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-700">Mohammed Baba</a> · Source code available on <a href="https://github.com/med-more" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-700">GitHub</a>
+            "Code is like humor. When you have to explain it, it's bad." — Cory House · ©{currentYear} · Developed by <a href="https://github.com/med-more" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-700">Mohammed Baba</a>
           </p>
         </motion.div>
       </div>

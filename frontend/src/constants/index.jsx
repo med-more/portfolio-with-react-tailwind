@@ -759,7 +759,7 @@ export const PROJECTS = [
     description:
       "Application MERN avec React Native, conçue selon une architecture avancée pour la gestion des incidents techniques.",
     image: p1,
-    images: [p1, p1, p1], // Add multiple images for carousel
+    /* images: [p1, p1, p1], */ // Add multiple images for carousel
     githubLink: "https://github.com/med-more/Plateforme-Mobile-de-Gestion-des-Incidents-Techniques.git",
     liveLink: "https://example.com",
     tags: ["MERN", "React Native", "Architecture Avancée"],
@@ -770,9 +770,9 @@ export const PROJECTS = [
     description:
       "Plateforme de gestion de recettes avec navigation sécurisée et creaction d'une nouvelle recette avec la gestion des recettes et de profile.",
     image: p2,
-    images: [p2, p2, p2], // Add multiple images for carousel
+    images: [p2], // Add multiple images for carousel
     githubLink: "https://github.com/med-more/Plateforme-de-gestion-de-recettes.git",
-    liveLink: "https://example.com",
+    liveLink: "https://cooksecure-globe.netlify.app/",
     tags: ["React", "Tailwindcss", "framer-motion", "React router"],
   },
   {
@@ -780,7 +780,7 @@ export const PROJECTS = [
     name: "Application de gestion utilisateur",
     description: "App React de gestion des utilisateurs avec vérification d'identité et interface administrateur.",
     image: p3,
-    images: [p3, p3, p3],
+    /* images: [p3, p3, p3], */
     githubLink: "https://github.com/med-more/API-s-curis-e-d-authentification.git",
     liveLink: "https://example.com",
     tags: ["React", "Tailwindcss", "React hot toast", "jwt", "Auth", "Admin", "user"],
@@ -791,7 +791,7 @@ export const PROJECTS = [
     description:
       "Création d'un blog avec fonctionnalités de publication d'articles, gestion de commentaires et filtres dynamiques.",
     image: p4,
-    images: [p4, p4, p4],
+    /* images: [p4, p4, p4], */
     githubLink: "https://github.com/med-more/application-de-blog.git",
     liveLink: "https://example.com",
     tags: ["React", "Json server", "React toastify", "Tailwincss"],
@@ -801,9 +801,9 @@ export const PROJECTS = [
     name: "Application de Quiz",
     description: "Application de quiz interactive utilisant l'API Trivia, avec suivi de progression du joueur.",
     image: p5,
-    images: [p5, p5, p5],
+    /* images: [p5, p5, p5], */
     githubLink: "https://github.com/med-more/Application-de-Quiz-avec-API-Trivia-et-suivi-de-progression.git",
-    liveLink: "https://example.com",
+    liveLink: "https://quiz-globe.netlify.app/",
     tags: ["React", "TypeScript", "Trivia API", "Quiz", "REST API"],
   },
   {
@@ -812,10 +812,10 @@ export const PROJECTS = [
     description:
       "App React consommant une API externe pour afficher des informations sur les films, séries et acteurs.",
     image: p6,
-    images: [p6, p6, p6],
+    /* images: [p6, p6, p6], */
     githubLink:
       "https://github.com/med-more/Application-de-consultation-de-films-avec-consommation-d-une-API-externe.git",
-    liveLink: "https://example.com",
+    liveLink: "https://cinverse-movies.netlify.app/",
     tags: ["React", "OMDb API", "Javascript", "Tailwindcss", "framer motion", "Films", "Séries"],
   },
   {
@@ -824,7 +824,7 @@ export const PROJECTS = [
     description:
       "Une application web moderne et intuitive offrant des prévisions météorologiques précises grâce à l'API OpenWeatherMap. Avec une interface responsive et des visualisations dynamiques, WeatherNow permet aux utilisateurs de surveiller les conditions environnementales (qualité de l'air, polluants, visibilité) et de sauvegarder leurs localisations favorites.",
     image: p7,
-    images: [p7, p7, p7],
+    /* images: [p7, p7, p7], */
     githubLink: "https://github.com/med-more/Meteo-Application.git",
     liveLink: "https://example.com",
     tags: ["HTML", "css", "Sass", "JavaScript", "ES6", "API REST"],
@@ -835,7 +835,7 @@ export const PROJECTS = [
     description:
       "A full-stack web app built with React.js (Vite), Node.js/Express, and MongoDB for managing construction projects, tasks, and resources. Features real-time tracking, budget control, task dependencies, and resource allocation with a modern UI (Tailwind CSS). Developed as part of École Numérique Ahmed AL HANSALI's evaluation, showcasing full CRUD operations, REST API integration, and responsive design.",
     image: p8,
-    images: [p8, p8, p8],
+    /* images: [p8, p8, p8], */
     githubLink:
       "https://github.com/med-more/ConstructionXpert-Services-Solution-Application-de-Gestion-de-Projets-de-Construction.git",
     liveLink: "https://example.com",
@@ -846,7 +846,7 @@ export const PROJECTS = [
     name: "gestionnaire des taches",
     description: "une application backend de gestion des tâches en Node.js avec Express.js et MongoDB.",
     image: p9,
-    images: [p9, p9, p9],
+    /* images: [p9, p9, p9], */
     githubLink: "https://github.com/med-more/gestionnaire-des-taches.git",
     liveLink: "https://example.com",
     tags: ["Nodejs", "Express", "MongoDB", "postman"],
@@ -856,9 +856,9 @@ export const PROJECTS = [
     name: "My Portfolio🚀",
     description: "This modern and interactive portfolio, built with React, Vite, and Tailwind CSS, showcases my skills, projects, and professional background.",
     image: p10,
-    images: [p10, p10, p10],
+    /* images: [p10, p10, p10], */
     githubLink: "https://github.com/med-more/portfolio-with-react-tailwind.git",
-    liveLink: "https://example.com",
+    liveLink: "https://medfoliodev.netlify.app/",
     tags: ["Reactjs", "Tailwindcss", "Framer motion", "Lucide React","Lotties" ],
   },
 ]
